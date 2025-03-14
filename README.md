@@ -1,6 +1,4 @@
-# ai_powered_personal_assistant
-
-AI-Powered Personal Assistant
+# AI-Powered Personal Assistant 
 
 ## Getting Started
 
