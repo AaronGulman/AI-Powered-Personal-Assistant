@@ -15,7 +15,10 @@ class HomeScreen extends StatefulWidget{
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text("Welcome to Codo"),
+                    const Text(
+                        "WELCOME TO CODE",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                     const SizedBox(height:20),
                     Image.asset(
                         'assets/camera.png',
@@ -23,18 +26,22 @@ class HomeScreen extends StatefulWidget{
                       height: 100,
 
                     ),
-                    ElevatedButton(
+                    Center(
+
+                    child: ElevatedButton(
                         onPressed: (
 
                             ){
                           print("Translate button clicked!");
                         },
+
                         child: Text(
-                            "TRANSLATE",
+                            "TRANSLATE \n NOW",
                           style: TextStyle(fontWeight: FontWeight.bold ,color: Colors.red ,
                           ),
                         ),
                       style: ButtonStyle(backgroundColor: WidgetStatePropertyAll<Color>(Colors.black)),
+                    ),
                     ),
                   ],
                 )
