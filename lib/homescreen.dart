@@ -16,7 +16,7 @@ class HomeScreen extends StatefulWidget{
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                        "WELCOME TO CODE",
+                        "WELCOME TO HEXINK",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height:20),
@@ -36,7 +36,8 @@ class HomeScreen extends StatefulWidget{
                         },
 
                         child: Text(
-                            "TRANSLATE \n NOW",
+                            "PHOTO => <CODE/>",
+
                           style: TextStyle(fontWeight: FontWeight.bold ,color: Colors.red ,
                           ),
                         ),
