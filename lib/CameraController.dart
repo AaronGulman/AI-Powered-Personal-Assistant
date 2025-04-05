@@ -1,7 +1,12 @@
+import 'package:camera/camera.dart';
+import 'package:flutter/cupertino.dart';
 
 
-lass TakePictureScreen extends StatefulWidget{
-  const TakePictureScreen({super.key required this.camera})
+
+class TakePictureScreen extends StatefulWidget{
+  const TakePictureScreen({super.key ,required this.camera});
+  final cameras = await availableCameras();
+  final firstCamera = cameras.first;
   final CameraDescription camera;
 
   @override
