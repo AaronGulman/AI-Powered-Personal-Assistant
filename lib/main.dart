@@ -1,18 +1,24 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'homescreen.dart';
+import 'CameraController.dart';
 
 
-
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final cameras = await availableCameras();
-
+  final cameras =  await availableCameras();
   final firstCamera = cameras.first;
-  runApp(const MyApp());
+
+
+  runApp( MyApp(camera: firstCamera));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final CameraDescription camera;
+
+  const MyApp({super.key, required this.camera});
+
+
 
   @override
   Widget build(BuildContext context) {
