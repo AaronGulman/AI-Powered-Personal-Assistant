@@ -5,8 +5,6 @@ import 'package:flutter/cupertino.dart';
 
 class TakePictureScreen extends StatefulWidget{
   const TakePictureScreen({super.key ,required this.camera});
-  final cameras = await availableCameras();
-  final firstCamera = cameras.first;
   final CameraDescription camera;
 
   @override
@@ -31,7 +29,7 @@ class TakePictureScreenState extends State<TakePictureScreen>{
 
   @override
   void dispose(){
-    _container.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
